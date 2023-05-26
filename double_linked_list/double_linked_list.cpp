@@ -101,7 +101,7 @@ bool DoubleLinkedList::listEmpty() {
 	return (START == NULL);
 }
 
-void DoubleLinkedList::traverse() {
+woid DoubleLinkedList::traverse() {
 	if (listEmpty())
 		cout << "\nlist is empty" << endl;
 	else{
@@ -111,5 +111,12 @@ void DoubleLinkedList::traverse() {
 			cout << currentNode->noMhs << " " << currentNode->nama << endl;
 			currentNode = currentNode->next;
 		}
+	}
+}
+
+
+void DoubleLinkedList::revtraverse() {
+	if (listEmpty()) {
+		cout << "\nList is empty" << endl;
 	}
 }
